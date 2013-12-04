@@ -1,0 +1,15 @@
+/* standart font */
+p {
+	font: sans-serif, monospace, serif;
+	margin-left: 2em;
+}
+
+/* news date */
+.date {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.news {
+	
+}
