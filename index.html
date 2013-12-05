@@ -31,7 +31,7 @@
             <!-- Start Header -->
             <div id="HEAD">
                 <img alt="top" src="header_background.png" />
-                <div id="logo"><a href="index.html"><img class="top_logo" src="logo_3.png" /></a></div>
+                <div id="logo"><a href="top_iframe.html" target="contents"><img class="top_logo" src="logo_3.png" /></a></div>
 
             </div>
             <!-- End -->
@@ -40,16 +40,16 @@
             <div id="MENUBAR">
                 <table width="1000px" style="position: relative; top: 6px">
                     <tr>
-                        <td class="menubar"><div id="member"><a href="member.html"><img class="menu_button" src="member_1.png" /></a></div></td>
-                        <td class="menubar"><div id="schedule"><a href="schedule.html"><img class="menu_button" src="schedule_1.png" /></a></div></td>
-                        <td class="menubar"><div id="photo"><a href="photo.html"><img class="menu_button" src="photo_1.png" /></a></div></td>
-                        <td class="menubar"><div id="result"><a href="result.html"><img class="menu_button" src="result_1.png" /></a></div></td>
+                        <td class="menubar"><div id="member"><a href="member_iframe.html" target="contents"><img class="menu_button" src="member_1.png" /></a></div></td>
+                        <td class="menubar"><div id="schedule"><a href="schedule_iframe.html" target="contents"><img class="menu_button" src="schedule_1.png" /></a></div></td>
+                        <td class="menubar"><div id="photo"><a href="photo_iframe.html" target="contents"><img class="menu_button" src="photo_1.png" /></a></div></td>
+                        <td class="menubar"><div id="result"><a href="result_iframe.html" target="contents"><img class="menu_button" src="result_1.png" /></a></div></td>
                         <!-- 	<td class="menubar"><div id="link"><a href="http://orange91.bbs.fc2.com"><img class="menu_button" src="bbs.png" /></a></div></td> -->
                         <td class="menubar"><div id="link"><img class="menu_button" src="link_1.png" /></div></td>	
                     </tr>
                 </table>
             </div>
-            <!-- End -->
+            <!-- End MenuBar -->
 
 
             <!-- START LEFTSIDE -->
@@ -60,22 +60,7 @@
 
             <!-- START CONTENTS -->
             <div id="CONTENTS">
-                <!-- 新歓PV -->
-                <iframe src="schedule_iframe.html" style="border:0px;" name="contents" width="600px" height="1000px">iframe</iframe>
-                <img src="img/shinkan_pv.png" align="left" style="position:relative;" />
-                <center>
-                    <!--新歓動画-->
-                    <iframe width="500" height="281" src="http://www.youtube.com/embed/mPian_HkGc8?rel=0" frameborder="0" allowfullscreen></iframe>
-                </center>
-                <br /><br />
-
-                <!-- NEWS -->
-                <img src="img/head_r6_c4.png" class="button" />
-
-                <div align="center">
-                    <a class="twitter-timeline" data-chrome="noheader noborders noscrollbar" data-tweet-limit="5" data-border-color="gray" width="600px" href="https://twitter.com/BlueEgrets" data-widget-id="407790532702662656">@BlueEgrets</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
-
+                <iframe src="top_iframe.html" style="border:0px;" name="contents" width="600px" height="1500px">iframe</iframe>
             </div>
 
             <!-- START RIGHTSIDE -->
@@ -98,14 +83,11 @@
                     <div><p class="date">2013.2.25</p><p>スケジュールを更新しました。（３月）</p></div>
                     <div><p class="date">2012.12.27</p><p>スケジュールを更新しました。（２月）</p></div>
                     <div><p class="date">2012.12.21</p><p>スケジュールを更新しました。（１月）</p></div>
-                    <div><p class="date">2012.12.20</p>
-                        <!-- 	<p style="font-size: 5em;">どーん！</p> -->
-                        <p>Blue Egrets HP 更新しました！<br />
-                        まだ作ってる途中です。
-                        </p></div>
+                    <div><p class="date">2012.12.20</p><p>Blue Egrets HP 更新しました！<br />まだ作ってる途中です。</p></div>
                     </code>
                 </div>
             </div>
+            <!--End RightSide-->
 
             <!-- Start Footer -->
             <div id="FOOTER">
@@ -126,7 +108,7 @@
             <!--<script src="javascript/jquery.slideViewerPro.1.5.js" type="text/javascript"></script>-->
             <script type="text/javascript">
                 <!--
-                $(document).ready(function() {
+                $(document).ready(function(){
                         $('#logo').jrumble({
 x: 1,
 y: 1,
@@ -159,41 +141,41 @@ $('#schedule, #member, #photo, #result, #link').hover(function() {
 //-->
 </script>
 
-<script type="text/javascript">
-    /*
-       $(window).bind("load", function() {
-       $("div#photo_nobeyama").slideView()
-       });
-     */
-$(window).bind("load", function() {
-        $("div#shinkan").slideViewerPro({
-thumbs: 6,
-asTimer: 3500, 
-typo: true,
-galBorderWidth: 1,
-galBorderColor: "gray",
-thumbsBorderOpacity: 0, 
-buttonsTextColor: "#707070",
-buttonsWidth: 40,
-thumbsActiveBorderOpacity: 0.8,
-thumbsActiveBorderColor: "blue",
-shuffle: false
-});
-        $("div#my-folio-of-works").slideViewerPro({
-thumbs: 4,
-asTimer: 3500, 
-typo: true,
-galBorderWidth: 1,
-galBorderColor: "gray",
-thumbsBorderOpacity: 0, 
-buttonsTextColor: "#707070",
-buttonsWidth: 40,
-thumbsActiveBorderOpacity: 0.8,
-thumbsActiveBorderColor: "blue",
-shuffle: false
-});
-});
-</script> 
+<!--<script type="text/javascript">-->
+    <!--/*-->
+       <!--$(window).bind("load", function() {-->
+       <!--$("div#photo_nobeyama").slideView()-->
+       <!--});-->
+     <!--*/-->
+<!--$(window).bind("load", function() {-->
+        <!--$("div#shinkan").slideViewerPro({-->
+<!--thumbs: 6,-->
+<!--asTimer: 3500, -->
+<!--typo: true,-->
+<!--galBorderWidth: 1,-->
+<!--galBorderColor: "gray",-->
+<!--thumbsBorderOpacity: 0, -->
+<!--buttonsTextColor: "#707070",-->
+<!--buttonsWidth: 40,-->
+<!--thumbsActiveBorderOpacity: 0.8,-->
+<!--thumbsActiveBorderColor: "blue",-->
+<!--shuffle: false-->
+<!--});-->
+        <!--$("div#my-folio-of-works").slideViewerPro({-->
+<!--thumbs: 4,-->
+<!--asTimer: 3500, -->
+<!--typo: true,-->
+<!--galBorderWidth: 1,-->
+<!--galBorderColor: "gray",-->
+<!--thumbsBorderOpacity: 0, -->
+<!--buttonsTextColor: "#707070",-->
+<!--buttonsWidth: 40,-->
+<!--thumbsActiveBorderOpacity: 0.8,-->
+<!--thumbsActiveBorderColor: "blue",-->
+<!--shuffle: false-->
+<!--});-->
+<!--});-->
+<!--</script> -->
 </body>
 
 </html>

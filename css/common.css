@@ -77,7 +77,8 @@ img.photo_center {
 
 
 /* member table */
-table.member {
+table.member {
+    width: 500px;
 }
 
 table.member th {
