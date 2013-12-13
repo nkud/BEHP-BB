@@ -57,6 +57,7 @@
             <div id="LEFTSIDE">
                 <!--    <img src="img/shinkan_check.png" /> -->
                 <img src="img/invitation_logo.png" />
+                <div id="shinkan_pv" align="center"><a href="http://www.youtube.com/watch?v=mPian_HkGc8"><img src="img/shinkan_pv.png" /></a></div>
             </div>
 
             <!-- START CONTENTS -->
@@ -128,12 +129,12 @@ rotation: 0
                         };
                         demoStart();
 
-                        $('#schedule, #member, #photo, #result, #link').jrumble({
+                        $('#schedule, #member, #photo, #result, #link, #shinkan_pv').jrumble({
 x: 1,
 y: 1,
 rotation: 1
 });
-$('#schedule, #member, #photo, #result, #link').hover(function() {
+$('#schedule, #member, #photo, #result, #link, #shinkan_pv').hover(function() {
         $(this).trigger('startRumble');
         }, function() {
         $(this).trigger('stopRumble');
