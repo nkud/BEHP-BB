@@ -110,12 +110,12 @@ rotation: 0
                         };
                         demoStart();
 
-                        $('#schedule, #member, #photo, #result, #link, #shinkan_pv').jrumble({
+                        $('#shinkan_pv').jrumble({
 x: 1,
 y: 1,
 rotation: 1
 });
-$('#schedule, #member, #photo, #result, #link, #shinkan_pv').hover(function() {
+$('#shinkan_pv').hover(function() {
         $(this).trigger('startRumble');
         }, function() {
         $(this).trigger('stopRumble');
