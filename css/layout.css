@@ -42,9 +42,10 @@ body {
 }
 
 #LEFTSIDE {
+    background: white;
 	width: 200px;
 /* 	height: 540px; */
-	height: auto;
+	height: 800px;
 	
 	padding: 0;
 	margin: 10px 0px;
@@ -53,6 +54,7 @@ body {
 }
 
 #CONTENTS {
+    background: white;
 	width: 800px;
 /* 	height: 540px; */
     height: auto;

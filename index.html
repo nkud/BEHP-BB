@@ -21,6 +21,15 @@
             }
 
         </style>
+        <script>
+            $(function)() {
+                jQuery.preloadImages = function() {
+                    jQuery("<img>").attr("src", arguments[i]);
+                }
+            };
+            $.preloadImages("img/button/link_1.png","img/button/photo_1.png","img/button/schedule_1.png","img/button/member_1.png","img/button/result_1.png",);
+        });
+        </script>
     </head>
 
     <body style="background: url(img/background_top.png); background-repeat: repeat-x;">
@@ -41,7 +50,7 @@
                     <tr>
                         <td class="menubar"><div id="member"><a href="iframe/member_iframe.html" target="contents"><img class="menu_button" src="img/button/member_1.png" /></a></div></td>
                         <td class="menubar"><div id="schedule"><a href="iframe/test.html" target="contents"><img class="menu_button" src="img/button/schedule_1.png" /></a></div></td>
-                        <td class="menubar"><div id="photo"><img class="menu_button" src="img/button/photo_1.png" /></div></td>
+                        <td class="menubar"><div id="photo"><a href="iframe/photo_iframe.html" target="contents"><img class="menu_button" src="img/button/photo_1.png" /></a></div></td>
                         <td class="menubar"><div id="result"><a href="iframe/result_iframe.html" target="contents"><img class="menu_button" src="img/button/result_1.png" /></a></div></td>
                         <!--    <td class="menubar"><div id="link"><a href="http://orange91.bbs.fc2.com"><img class="menu_button" src="bbs.png" /></a></div></td> -->
                         <td class="menubar"><div id="link"><img class="menu_button" src="img/button/link_1.png" /></div></td>
