@@ -31,8 +31,8 @@ img {
 
 hr.footer {
 	height: 30px;
-	background: black;
-	background-image: url(../copyright.png);
+	background: #000;
+	background-image: url(../img/copyright.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	padding: 0;
