@@ -17,7 +17,7 @@
         $("#calendar").fullCalendar({
             events: "https://www.google.com/calendar/feeds/blueegrets%40gmail.com/public/basic",
             theme: true,
-            height: 600,
+            aspectRatio: 2,
             firstDay: 1,
             monthNames: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月',],
             dayNamesShort: [ '日','月','火','水','木','金','土' ],
@@ -29,6 +29,6 @@
         </script>
     </head>
     <body>
-        <div id="calendar"></div>
+        <div id="calendar" style="border:solid #eee 1px;padding: 5px;"></div>
     </body>
 </html>
