@@ -4,6 +4,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compativble" content="IE=edge,chrome=1">
 
+        <meta http-equiv=”Pragma” content=”no-cache”>
+        <meta http-equiv=”cache-control” content=”no-cache”>
+        <meta http-equiv=”expires” content=”0">
+
         <!-- ex-stylesheet -->
         <link rel="stylesheet" href="css/layout.css" type="text/css" />
         <link rel="stylesheet" href="css/font.css" type="text/css" />
@@ -15,6 +19,10 @@
         <script type="text/javascript">
             <!--
             $(document).ready(function(){
+                    $('#contents-frame').each(function() {
+                        this.contentWindow.location.reload(true);
+                        });
+
                     $('#logo').jrumble({
 x: 1,
 y: 1,
@@ -102,7 +110,7 @@ $('#shinkan_pv').hover(function() {
 
             <!-- START CONTENTS -->
             <div id="CONTENTS">
-                <iframe src="iframe/top_iframe.html" style="border:0px;" name="contents" width="600px" height="800px">Loading...</iframe>
+                <iframe id="contents-frame" src="iframe/top_iframe.html" style="border:0px;" name="contents" width="600px" height="800px">Loading...</iframe>
             </div>
             <!--END Contents-->
 
