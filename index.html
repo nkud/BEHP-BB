@@ -1,140 +1,140 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compativble" content="IE=edge,chrome=1">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compativble" content="IE=edge,chrome=1">
 
-        <meta http-equiv=”Pragma” content=”no-cache”>
-        <meta http-equiv=”cache-control” content=”no-cache”>
-        <meta http-equiv=”expires” content=”0">
+    <meta http-equiv=”Pragma” content=”no-cache”>
+    <meta http-equiv=”cache-control” content=”no-cache”>
+    <meta http-equiv=”expires” content=”0">
 
-        <!-- ex-stylesheet -->
-        <link rel="stylesheet" href="css/layout.css" type="text/css" />
-        <link rel="stylesheet" href="css/font.css" type="text/css" />
-        <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <!-- ex-stylesheet -->
+    <link rel="stylesheet" href="css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
 
-        <!--    javascript setting -->
-        <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery.jrumble.1.3.js"></script>
-        <script type="text/javascript">
-            <!--
-            $(document).ready(function(){
-                    $('#contents-frame').each(function() {
-                        this.contentWindow.location.reload(true);
-                        });
+    <!--    javascript setting -->
+    <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.jrumble.1.3.js"></script>
+    <script type="text/javascript">
+      <!--
+      $(document).ready(function(){
+          $('#contents-frame').each(function() {
+            this.contentWindow.location.reload(true);
+            });
 
-                    $('#logo').jrumble({
+          $('#logo').jrumble({
 x: 1,
 y: 1,
 rotation: 0
 });
 
-                    var demoStart = function(){
-                    $('#logo').trigger('startRumble');
-                    setTimeout(demoStop, 300);
-                    };
+          var demoStart = function(){
+          $('#logo').trigger('startRumble');
+          setTimeout(demoStop, 300);
+          };
 
-                    var demoStop = function(){
-                    $('#logo').trigger('stopRumble');
-                    setTimeout(demoStart, 600);
-                    };
-                    demoStart();
+          var demoStop = function(){
+          $('#logo').trigger('stopRumble');
+          setTimeout(demoStart, 600);
+          };
+          demoStart();
 
-                    $('#shinkan_pv').jrumble({
+      $('#shinkan_pv').jrumble({
 x: 1,
 y: 1,
 rotation: 1
 });
 $('#shinkan_pv').hover(function() {
-        $(this).trigger('startRumble');
-        }, function() {
-        $(this).trigger('stopRumble');
-        });
+    $(this).trigger('startRumble');
+    }, function() {
+    $(this).trigger('stopRumble');
+    });
 });
 
 //-->
 </script>
 <!-- inline stylesheet -->
 <style type="text/css">
-    .nobr {
-        display: inline-block;
-        _display: inline;
-    }
+  .nobr {
+    display: inline-block;
+    _display: inline;
+  }
 
 </style>
 <script>
-    $(function)() {
+  $(function)() {
     jQuery.preloadImages = function() {
-    jQuery("<img>").attr("src", arguments[i]);
+      jQuery("<img>").attr("src", arguments[i]);
     }
-    };
-    $.preloadImages("img/button/link_1.png","img/button/photo_1.png","img/button/schedule_1.png","img/button/member_1.png","img/button/result_1.png",);
-    });
+  };
+  $.preloadImages("img/button/link_1.png","img/button/photo_1.png","img/button/schedule_1.png","img/button/member_1.png","img/button/result_1.png",);
+});
 </script>
     </head>
 
     <body style="background: url(img/background_top.png); background-repeat: repeat-x;">
 
-        <div id="CONTAINER">
+      <div id="CONTAINER">
 
-            <!-- Start Header -->
-            <div id="HEAD">
-                <img alt="top" src="img/header_background.png" />
-                <div id="logo"><a href="iframe/top_iframe.html" target="contents"><img class="top_logo" src="img/logo_3.png" /></a></div>
-
-            </div>
-            <!-- End -->
-
-            <!-- Start MenuBar -->
-            <div id="MENUBAR">
-                <table width="1000px" style="position: relative; top: 6px">
-                    <tr>
-                        <td class="menubar"><div id="member"><a href="iframe/member_iframe.html" target="contents"><img class="menu_button" src="img/button/member_1.png" /></a></div></td>
-                        <td class="menubar"><div id="schedule"><a href="iframe/schedule_iframe.html" target="contents"><img class="menu_button" src="img/button/schedule_1.png" /></a></div></td>
-                        <td class="menubar"><div id="photo"><a href="iframe/photo_iframe.html" target="contents"><img class="menu_button" src="img/button/photo_1.png" /></a></div></td>
-                        <td class="menubar"><div id="result"><a href="iframe/result_iframe.html" target="contents"><img class="menu_button" src="img/button/result_1.png" /></a></div></td>
-                        <!--    <td class="menubar"><div id="link"><a href="http://orange91.bbs.fc2.com"><img class="menu_button" src="bbs.png" /></a></div></td> -->
-                        <td class="menubar"><div id="link"><img class="menu_button" src="img/button/link_1.png" /></div></td>
-                    </tr>
-                </table>
-            </div>
-            <!-- End MenuBar -->
-
-
-            <!-- START LEFTSIDE -->
-            <div id="LEFTSIDE">
-                <!--    <img src="img/shinkan_check.png" /> -->
-                <img src="img/invitation_logo.png" />
-                <!--<div id="shinkan_pv" align="center"><a href="http://www.youtube.com/watch?v=mPian_HkGc8"><img src="img/shinkan_pv.png" /></a></div>-->
-            </div>
-
-            <!-- START CONTENTS -->
-            <div id="CONTENTS">
-                <iframe id="contents-frame" src="iframe/top_iframe.html" style="border:0px;" name="contents" width="600px" height="800px">Loading...</iframe>
-            </div>
-            <!--END Contents-->
-
-            <!--START RIGHT SIDE-->
-            <div id="RIGHTSIDE">
-                <div style="float:left;width:200px;border:solid gray 0.5px;background=red;">
-                <center>
-                    <img width="150px" src="img/twitter_news.png" />
-                    <a class="twitter-timeline" data-chrome="noheader noborders noscrollbar" data-tweet-limit="5" data-border-color="gray" width="180px" href="https://twitter.com/BlueEgrets" data-widget-id="407790532702662656">@BlueEgrets</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </center>
-                </div>
-            </div>
-            <!--END RIGHT SIDE-->
+        <!-- Start Header -->
+        <div id="HEAD">
+          <img alt="top" src="img/header_background.png" />
+          <div id="logo"><a href="iframe/top_iframe.html" target="contents"><img class="top_logo" src="img/logo_3.png" /></a></div>
 
         </div>
-            <!-- Start Footer -->
-            <div id="FOOTER">
-                <hr class="footer">
-            </div>
+        <!-- End -->
 
-            <!--smart_phone-->
-            <div id="smart_phone" align="center">
-                <a href="mobile_website/app.html"><img src="img/smart_phone.png" /></a>
-            </div>
+        <!-- Start MenuBar -->
+        <div id="MENUBAR">
+          <table width="1000px" style="position: relative; top: 6px">
+            <tr>
+              <td class="menubar"><div id="member"><a href="iframe/member.html" target="contents"><img class="menu_button" src="img/button/member_1.png" /></a></div></td>
+              <td class="menubar"><div id="schedule"><a href="iframe/schedule_iframe.html" target="contents"><img class="menu_button" src="img/button/schedule_1.png" /></a></div></td>
+              <td class="menubar"><div id="photo"><a href="iframe/photo_iframe.html" target="contents"><img class="menu_button" src="img/button/photo_1.png" /></a></div></td>
+              <td class="menubar"><div id="result"><a href="iframe/result_iframe.html" target="contents"><img class="menu_button" src="img/button/result_1.png" /></a></div></td>
+              <!--    <td class="menubar"><div id="link"><a href="http://orange91.bbs.fc2.com"><img class="menu_button" src="bbs.png" /></a></div></td> -->
+              <td class="menubar"><div id="link"><img class="menu_button" src="img/button/link_1.png" /></div></td>
+            </tr>
+          </table>
+        </div>
+        <!-- End MenuBar -->
+
+
+        <!-- START LEFTSIDE -->
+        <div id="LEFTSIDE">
+          <!--    <img src="img/shinkan_check.png" /> -->
+          <img src="img/invitation_logo.png" />
+          <!--<div id="shinkan_pv" align="center"><a href="http://www.youtube.com/watch?v=mPian_HkGc8"><img src="img/shinkan_pv.png" /></a></div>-->
+        </div>
+
+        <!-- START CONTENTS -->
+        <div id="CONTENTS">
+          <iframe id="contents-frame" src="iframe/top_iframe.html" style="border:0px;" name="contents" width="600px" height="800px">Loading...</iframe>
+        </div>
+        <!--END Contents-->
+
+        <!--START RIGHT SIDE-->
+        <div id="RIGHTSIDE">
+          <div style="float:left;width:200px;border:solid gray 0.5px;background=red;">
+            <center>
+              <img width="150px" src="img/twitter_news.png" />
+              <a class="twitter-timeline" data-chrome="noheader noborders noscrollbar" data-tweet-limit="5" data-border-color="gray" width="180px" href="https://twitter.com/BlueEgrets" data-widget-id="407790532702662656">@BlueEgrets</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </center>
+          </div>
+        </div>
+        <!--END RIGHT SIDE-->
+
+      </div>
+      <!-- Start Footer -->
+      <div id="FOOTER">
+        <hr class="footer">
+      </div>
+
+      <!--smart_phone-->
+      <div id="smart_phone" align="center">
+        <a href="mobile_website/app.html"><img src="img/smart_phone.png" /></a>
+      </div>
     </body>
-</html>
+  </html>
