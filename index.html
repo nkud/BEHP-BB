@@ -1,6 +1,21 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="ja">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlueEgretsWebSite</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compativble" content="IE=edge,chrome=1">
 
@@ -53,15 +68,6 @@ $('#shinkan_pv').hover(function() {
     });
 });
 
-$(document).ready(function() {
-  $('iframe').load(function() {
-    if ( typeof $(this).attr('height') == 'undefined') {
-    $(this).height(this.contentWindow.document.documentElement.scrollHeight+10);
-    }
-    });
-  $('iframe').triggerHandler('load');
-  });
-
 //-->
 </script>
 
@@ -103,7 +109,7 @@ $(document).ready(function() {
 
         <!-- START CONTENTS -->
         <div id="CONTENTS">
-          <iframe id="contents-frame" src="iframe/top_iframe.html" style="border:0px;" name="contents" width="600px">Loading...</iframe>
+          <iframe id="contents-frame" src="iframe/top_iframe.html" style="border:0px;" name="contents" width="600px" height="1000px">Loading...</iframe>
         </div>
         <!--END Contents-->
 
@@ -112,7 +118,7 @@ $(document).ready(function() {
           <div style="float:left;width:200px;border:solid gray 0.5px;background=red;">
             <center>
               <img width="150px" src="img/twitter_news.png" />
-              <a class="twitter-timeline" data-chrome="noheader noborders noscrollbar" data-tweet-limit="5" data-border-color="gray" width="180px" href="https://twitter.com/BlueEgrets" data-widget-id="407790532702662656">@BlueEgrets</a>
+              <a class="twitter-timeline" data-chrome="noheader noborders noscrollbar" data-border-color="gray" width="180px" height="1000px" href="https://twitter.com/BlueEgrets" data-widget-id="407790532702662656">@BlueEgrets</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </center>
           </div>
@@ -130,5 +136,10 @@ $(document).ready(function() {
       <div id="smart_phone" align="center">
         <a href="mobile_website/app.html"><img src="img/smart_phone.png" /></a>
       </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../bootstrap/js/bootstrap.min.js"></script>
     </body>
   </html>

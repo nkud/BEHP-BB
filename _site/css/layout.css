@@ -43,12 +43,11 @@ body {
 
 #LEFTSIDE {
     background: white;
-	width: 150px;
-/* 	height: 540px; */
+	width: 100px;
 	height: 800px;
 	
 	padding: 0;
-	margin: 10px;
+	margin: 10px 0 10px 10px;
 	border: 0;
 	float: left;
 }
@@ -69,7 +68,7 @@ body {
 #RIGHTSIDE {
 	width: 150px;
 /* 	height: 540px; */
-	height: auto;
+	height: 1000px;
 	padding: 0;
 	margin: 10px 0px;
 	border: 0;
