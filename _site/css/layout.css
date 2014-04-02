@@ -1,0 +1,91 @@
+/* layout */
+body {
+	padding: 0px;
+	margin: 0px;
+	
+/* 	for IE */
+	background-color: transparent;
+}
+
+#CONTAINER { 
+	width: 1000px;
+	height: auto;
+	
+/* 	margin: auto; */
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 0;
+/* 	background: red; */
+	text-align: left;
+/* 	border-left : 10px solid; */
+/* 	border-right: 10px solid black; */
+	
+/* 	background: #0c0c6d; */
+}
+
+#HEAD {
+	width: 1000px;
+	height: 200px;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+#LOGO {
+	border: 0;
+}
+
+#MENUBAR {
+	width: 1000px;
+	height: 60px;
+}
+
+#LEFTSIDE {
+    background: white;
+	width: 150px;
+/* 	height: 540px; */
+	height: 800px;
+	
+	padding: 0;
+	margin: 10px;
+	border: 0;
+	float: left;
+}
+
+#CONTENTS {
+    border-left: solid #eee 1px;
+    border-right: solid #eee 1px;
+    background: white;
+	width: 600px;
+    height: 800px;
+	
+	margin: 10px;
+    padding: 10px;
+	
+	float: left;
+}
+
+#RIGHTSIDE {
+	width: 150px;
+/* 	height: 540px; */
+	height: auto;
+	padding: 0;
+	margin: 10px 0px;
+	border: 0;
+	float: right;
+}
+
+#FOOTER {
+	width: auto;
+	height: 30px;
+	
+	padding: 0px;
+	margin: 0px;
+	background: grey;
+	
+/* 	background-image: url(footer_background.png); */
+	background-repeat: repeat-x;
+	
+	clear: both;
+}
